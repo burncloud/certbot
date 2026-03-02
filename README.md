@@ -1,5 +1,20 @@
 # certbot
 
+### dc asia
+
+````
+certbot certonly --dns-cloudflare \
+  --dns-cloudflare-credentials /etc/letsencrypt/cloudflare.ini \
+  -d digitalcloud.asia \
+  -d www.digitalcloud.asia \
+  --preferred-challenges dns-01 \
+  --force-renewal \
+  --dns-cloudflare-propagation-seconds 60 \
+  -v
+````
+
+
+
 ````
 手动模式（推荐）
 
